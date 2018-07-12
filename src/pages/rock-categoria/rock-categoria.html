@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar color="musica" >
+    <ion-title class="titulo" text-center >Rock</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg" >
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let rock of rock; let i = index" >
+        <img (click)="irGrupo(i)" class="imgRock" [src]="rock.img">
+        <p class="nombreRock" > {{ rock.nombre }} </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

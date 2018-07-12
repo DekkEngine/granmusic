@@ -1,0 +1,23 @@
+page-rock-modal-album {
+    .imgNavbar {
+        margin-top: 5px;
+        width: 35px;
+        height: 35px;
+        border-radius: 2px;
+        border: 1px solid white;
+    }
+
+    .caja {
+        background-color: rgba(211, 168, 168, 0.314);
+        margin: 0 5px 0 5px;
+        padding: 10px 0 10px 0;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        box-shadow: 0 20px 30px -5px;
+    }
+
+    .textoCancion {
+        text-align: left;
+        margin-left: 20px;
+    }
+}

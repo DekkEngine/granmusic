@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="musica" >
+    <ion-title text-center> {{ rock.nombre }} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div text-center >
+    <img class="imgCover" [src]="rock.cover">
+  </div>
+  <div text-center >
+    <img class="imgPerfil" [src]="rock.img">
+  </div>
+  <div text-center >
+    <h1 class="nombre" > {{ rock.nombre }} </h1>
+    <div class="caja" >
+      <p class="biografia" >Biografia: {{ rock.bio }} </p>
+    </div>
+  </div>
+  <div class="caja">
+    <hr>
+  </div>
+  <div class="caja">
+    <div>
+      <ion-row>
+        <ion-col col-4>
+          <img class="imgAlbum" (click)="irAlbum1()" [src]="album1.img">
+          <p class="nombreAlbum" > {{ album1.nombre }} </p>
+        </ion-col>
+        <ion-col col-4>
+            <img class="imgAlbum" (click)="irAlbum2()" [src]="album2.img">
+            <p class="nombreAlbum" > {{ album2.nombre }} </p>
+        </ion-col>
+        <ion-col col-4>
+            <img class="imgAlbum" (click)="irAlbum3()" [src]="album3.img">
+            <p class="nombreAlbum" > {{ album3.nombre }} </p>
+        </ion-col>
+        <ion-col col-4>
+            <img class="imgAlbum" (click)="irAlbum4()" [src]="album4.img">
+            <p class="nombreAlbum" > {{ album4.nombre }} </p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+</ion-content>

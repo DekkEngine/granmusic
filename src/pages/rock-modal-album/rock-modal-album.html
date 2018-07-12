@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="musica" >
+    <ion-title text-center >{{ album.nombre }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="cerrarModal()">Cerrar</button>
+    </ion-buttons>
+    <ion-buttons left>
+      <img class="imgNavbar" [src]="album.img">
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="caja" >
+    <h1 text-center > CANCIONES </h1>
+    <p class="textoCancion" *ngFor="let cancion of canciones"> {{ cancion }} </p>
+  </div>
+
+</ion-content>
