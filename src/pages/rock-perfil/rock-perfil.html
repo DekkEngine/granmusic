@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar color="musica" >
-    <ion-title text-center> {{ rock.nombre }} </ion-title>
+    <ion-title class="titulo" text-center> {{ rock.nombre }} </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,6 +18,7 @@
   <div text-center >
     <h1 class="nombre" > {{ rock.nombre }} </h1>
     <div class="caja" >
+      <h1 text-center style="color: white" > Biografia </h1>
       <p class="biografia" >Biografia: {{ rock.bio }} </p>
     </div>
   </div>
@@ -25,7 +26,16 @@
     <hr>
   </div>
   <div class="caja">
+    <h1 text-center style="color: white" > Integrantes </h1>
+    <p *ngFor="let integrante of integrantes" class="textoGeneral" > {{ integrante }} </p>
+  </div>
+  <div class="caja">
+      <h1 text-center style="color: white" > Generos </h1>
+      <p *ngFor="let genero of generos" class="textoGeneral" > {{ genero }} </p>
+    </div>
+  <div class="caja">
     <div>
+      <h1 text-center style="color: white" > Albunes </h1>
       <ion-row>
         <ion-col col-4>
           <img class="imgAlbum" (click)="irAlbum1()" [src]="album1.img">

@@ -1,9 +1,11 @@
 <ion-header>
 
   <ion-navbar color="musica" >
-    <ion-title text-center >{{ album.nombre }}</ion-title>
+    <ion-title class="titulo" text-center >{{ album.nombre }}</ion-title>
     <ion-buttons end>
-      <button ion-button (click)="cerrarModal()">Cerrar</button>
+      <button ion-button icon-only (click)="cerrarModal()">
+        <ion-icon name="ios-close-circle-outline"></ion-icon>
+      </button>
     </ion-buttons>
     <ion-buttons left>
       <img class="imgNavbar" [src]="album.img">
@@ -16,7 +18,8 @@
 <ion-content padding>
 
   <div class="caja" >
-    <h1 text-center > CANCIONES </h1>
+    <h1 text-center style="color:white" > CANCIONES </h1>
+    <hr class="hrr" >
     <p class="textoCancion" *ngFor="let cancion of canciones"> {{ cancion }} </p>
   </div>
 

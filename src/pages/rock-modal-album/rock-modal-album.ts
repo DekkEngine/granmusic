@@ -17,7 +17,6 @@ export class RockModalAlbumPage {
  
    this.album = this.navParams.get("album");
    this.canciones = this.album['canciones'];
-   console.log(this.canciones);
    
   }
 

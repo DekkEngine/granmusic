@@ -1,4 +1,22 @@
 page-rock-modal-album {
+    ion-content {
+        background-image: url(../assets/img/bgmontaña2.jpg);
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .titulo {
+        margin-left: 40px;
+    }
+
+    .hrr {
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .imgNavbar {
         margin-top: 5px;
         width: 35px;
@@ -19,5 +37,6 @@ page-rock-modal-album {
     .textoCancion {
         text-align: left;
         margin-left: 20px;
+        color: white;
     }
 }

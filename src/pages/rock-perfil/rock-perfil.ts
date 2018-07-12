@@ -10,6 +10,8 @@ import { RockModalAlbumPage } from '../index.pages';
 export class RockPerfilPage {
 
   rock:any[] = [];
+  integrantes:any[] = [];
+  generos:any[] = [];
   album1:any[] = [];
   album2:any[] = [];
   album3:any[] = [];
@@ -20,6 +22,8 @@ export class RockPerfilPage {
               public modalCtrl:ModalController) {
 
     this.rock = this.navParams.get('rock');
+    this.integrantes = this.rock['integrantes']
+    this.generos = this.rock['generos'];
     this.album1 = this.rock['album']['a1'];
     this.album2 = this.rock['album']['a2'];
     this.album3 = this.rock['album']['a3'];
