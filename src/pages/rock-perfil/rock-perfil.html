@@ -25,12 +25,29 @@
   <div class="caja">
     <hr>
   </div>
+  <div class="caja" >
+    <h1 text-center style="color: white" >Galeria</h1>
+    <ion-slides pager >
+      <ion-slide>
+        <img class="imgGaleria"  [src]="galerias.img1">
+      </ion-slide>
+      <ion-slide>
+        <img class="imgGaleria"  [src]="galerias.img2">
+      </ion-slide>
+      <ion-slide>
+        <img class="imgGaleria"  [src]="galerias.img3">
+      </ion-slide>
+      <ion-slide>
+        <img class="imgGaleria"  [src]="galerias.img4">
+      </ion-slide>
+    </ion-slides>
+  </div>
   <div class="caja">
     <h1 text-center style="color: white" > Integrantes </h1>
     <p *ngFor="let integrante of integrantes" class="textoGeneral" > {{ integrante }} </p>
   </div>
   <div class="caja">
-      <h1 text-center style="color: white" > Generos </h1>
+      <h1 text-center style="color: white" > Genero </h1>
       <p *ngFor="let genero of generos" class="textoGeneral" > {{ genero }} </p>
     </div>
   <div class="caja">

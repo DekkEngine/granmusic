@@ -12,6 +12,7 @@ export class RockPerfilPage {
   rock:any[] = [];
   integrantes:any[] = [];
   generos:any[] = [];
+  galerias:any[] = [];
   album1:any[] = [];
   album2:any[] = [];
   album3:any[] = [];
@@ -24,10 +25,13 @@ export class RockPerfilPage {
     this.rock = this.navParams.get('rock');
     this.integrantes = this.rock['integrantes']
     this.generos = this.rock['generos'];
+    this.galerias = this.rock['galeria'];
+
     this.album1 = this.rock['album']['a1'];
     this.album2 = this.rock['album']['a2'];
     this.album3 = this.rock['album']['a3'];
     this.album4 = this.rock['album']['a4'];
+    
 
   }
 
