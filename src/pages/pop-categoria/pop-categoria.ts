@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the PopCategoriaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from '../../providers/firebase/firebase';
+import { PopPerfilPage } from '../pop-perfil/pop-perfil';
 
 @IonicPage()
 @Component({
@@ -15,11 +10,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PopCategoriaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  pop:any[] = [];
+
+  constructor(public navCtrl: NavController, 
+              private _fs:FirebaseProvider,
+              public navParams: NavParams) {
+
+    _fs.getPop().subscribe( pop => {
+      this.pop = pop;
+    });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PopCategoriaPage');
+  ionViewDidLoad() {}
+
+  irGrupo(idx){
+    this.navCtrl.push( PopPerfilPage, { "pop" : this.pop[idx] } );
   }
 
 }

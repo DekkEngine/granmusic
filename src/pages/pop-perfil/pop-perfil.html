@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color="musica" >
+    <ion-title> {{ pop.nombre }} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div text-center >
+    <img class="imgCover" [src]="pop.cover">
+  </div>
+  <div text-center >
+    <img class="imgPerfil" [src]="pop.img">
+  </div>
+  <div text-center >
+    <h1 class="nombre" > {{ pop.nombre }} </h1>
+    <div class="caja" >
+      <h1 text-center style="color: white" > Biografia </h1>
+      <p class="biografia" >Biografia: {{ pop.bio }} </p>
+    </div>
+  </div>
+  <div class="caja">
+    <hr>
+  </div>
+  <div class="caja">
+    <h1 text-center style="color: white">Galeria</h1>
+    <ion-slides pager>
+      <ion-slide>
+        <img class="imgGaleria" [src]="galerias.img1">
+      </ion-slide>
+      <ion-slide>
+        <img class="imgGaleria" [src]="galerias.img2">
+      </ion-slide>
+      <ion-slide>
+        <img class="imgGaleria" [src]="galerias.img3">
+      </ion-slide>
+      <ion-slide>
+        <img class="imgGaleria" [src]="galerias.img4">
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+</ion-content>

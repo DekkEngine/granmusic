@@ -8,5 +8,12 @@
 
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let pop of pop; let i = index" >
+        <img (click)="irGrupo(i)" class="imgPop" [src]="pop.img">
+        <p class="nombrepop" > {{ pop.nombre }} </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

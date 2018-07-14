@@ -10,7 +10,9 @@ import { HomePage,
          RockCategoriaPage, 
          PopCategoriaPage, 
          RockPerfilPage, 
-         RockModalAlbumPage } from "../pages/index.pages";
+         RockModalAlbumPage,
+         PopPerfilPage, 
+         PopModalAlbumPage } from "../pages/index.pages";
 
 //firebase
 import { AngularFireModule } from 'angularfire2';
@@ -34,7 +36,9 @@ export const firebaseConfig = {
     RockCategoriaPage,
     PopCategoriaPage,
     RockPerfilPage,
-    RockModalAlbumPage
+    RockModalAlbumPage,
+    PopPerfilPage, 
+    PopModalAlbumPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ export const firebaseConfig = {
     RockCategoriaPage,
     PopCategoriaPage,
     RockPerfilPage,
-    RockModalAlbumPage
+    RockModalAlbumPage,
+    PopPerfilPage, 
+    PopModalAlbumPage
   ],
   providers: [
     StatusBar,
